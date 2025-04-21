@@ -11,7 +11,6 @@ This is done based on template files for chapters and sections, so you can be qu
 Paragraph/character style tags are read from a configuration file.
 Optionally, one HTML file per chapter can be generated.
 
-![Screenshot](docs/Screenshots/screen01.png)
 
 ## Requirements
 
