@@ -12,7 +12,7 @@ sys.path.insert(0, f'{os.getcwd()}/../../novelibre/tools')
 from package_builder import PackageBuilder
 from shutil import rmtree
 
-VERSION = '0.1.0'
+VERSION = '0.2.0'
 
 
 class ApplicationBuilder(PackageBuilder):

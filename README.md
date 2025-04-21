@@ -1,4 +1,4 @@
-[![Download the latest release](docs/img/download-button.png)](https://raw.githubusercontent.com/peter88213/novx_html/main/dist/novx_html_v0.1.0.pyzw)
+[![Download the latest release](docs/img/download-button.png)](https://raw.githubusercontent.com/peter88213/novx_html/main/dist/novx_html_v0.2.0.pyzw)
 [![Changelog](docs/img/changelog-button.png)](docs/changelog.md)
 [![News/Feedback](docs/img/news-button.png)](https://github.com/peter88213/novelibre/discussions)
 [![User guide](docs/img/help-button.png)](docs/usage.md)
@@ -17,9 +17,9 @@ This is done based on template files for chapters and sections, so you can be qu
 ## Download and install
 
 
-Download the latest release [novx_html_v0.1.0.zip](https://github.com/peter88213/novx_html/raw/main/dist/novx_html_v0.1.0.zip)
+Download the latest release [novx_html_v0.2.0.zip](https://github.com/peter88213/novx_html/raw/main/dist/novx_html_v0.2.0.zip)
 
-- Extract the *novx_html_v0.1.0* folder from the downloaded zipfile "novx_html_v0.1.0.zip".
+- Extract the *novx_html_v0.2.0* folder from the downloaded zipfile "novx_html_v0.2.0.zip".
 
 ---
 

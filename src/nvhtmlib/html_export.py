@@ -5,7 +5,7 @@ For further information see https://github.com/peter88213/novx_html
 License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 """
 from nvlib.model.file.file_export import FileExport
-from nvhtmlib.novx_to_xhtml import NovxToXhtml
+from nvhtmlib.novx_to_html import NovxToHtml
 
 
 class HtmlExport(FileExport):
@@ -61,7 +61,7 @@ $SectionContent
 </html>
 '''
 
-    def _convert_from_novx(self, text, quick=False, **kwargs):
+    def _convert_from_novx(self, text, quick=False, firstInChapter=False, **kwargs):
         """Return text, converted from *novelibre* markup to target format.
         
         Positional arguments:
@@ -80,8 +80,8 @@ $SectionContent
 
         if text.lstrip().startswith('<'):
             # Remove all non-xhtml elements from the section content.
-            parser = NovxToXhtml()
-            parser.feed(text)
+            parser = NovxToHtml()
+            parser.feed(text, firstInChapter)
             return ''.join(parser.textList)
 
         newlines = []

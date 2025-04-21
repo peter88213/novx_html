@@ -58,6 +58,10 @@ def remove_all_testfiles():
     except:
         pass
     try:
+        os.remove(TEST_EXEC_PATH + LOCS)
+    except:
+        pass
+    try:
         os.remove(TEST_EXEC_PATH + PAPERBACK)
     except:
         pass
