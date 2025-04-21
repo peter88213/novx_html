@@ -3,6 +3,7 @@
 	<name>novx_html</name>
 	<comment></comment>
 	<projects>
+		<project>novelibre</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
