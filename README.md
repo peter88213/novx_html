@@ -8,8 +8,6 @@
 
 The novx_html Python script exports [novelibre](https://github.com/peter88213/novelibre/) projects as a whole in the HTML format.
 This is done based on template files for chapters and sections, so you can be quite flexible with the program output. 
-Paragraph/character style tags are read from a configuration file.
-Optionally, one HTML file per chapter can be generated.
 
 
 ## Requirements
