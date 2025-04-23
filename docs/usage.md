@@ -95,6 +95,8 @@ There are two options:
 -   `$ChapterNumber` - Chapter number (in sort order),
 -   `$Title` - Chapter title
 -   `$Desc` - Chapter description
+-   `$Epigraph` - Epigraph
+-   `$EpigraphSrc` - Epigraph source
 -   `$Notes` - Chapter notes
 -   `$ProjectName` - URL-coded file name without suffix and extension
 -   `$ProjectPath` - URL-coded fpath to the project directory
