@@ -6,8 +6,8 @@
 
 # ![H](src/icons/hLogo32.png) novx_html
 
-The novx_html Python script exports [novelibre](https://github.com/peter88213/novelibre/) projects as a whole in the HTML format.
-This is done based on template files for chapters and sections, so you can be quite flexible with the program output. 
+The novx_html Python script runs through all elements of a [novelibre](https://github.com/peter88213/novelibre/) project
+and fills custom HTML templates.
 
 
 ## Requirements
