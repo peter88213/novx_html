@@ -9,6 +9,8 @@
 The novx_html Python script runs through all elements of a [novelibre](https://github.com/peter88213/novelibre/) project
 and fills custom HTML templates.
 
+This is an experimental *.novx* variant of the [yw2html](https://peter88213.github.io/yw2html) script.
+
 
 ## Requirements
 
