@@ -54,7 +54,7 @@ The results will be written to the novelibre project directory.
 
 
 
-### Scene level templates
+### Section level templates
 
 - `section_template.html`(applied to "used" sections within "normal" chapters)
 - `first_section_template.html`(applied  to sections at the beginning of the chapter)
