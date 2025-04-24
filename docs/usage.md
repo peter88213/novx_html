@@ -44,19 +44,19 @@ The results will be written to the novelibre project directory.
 
 ### Chapter level templates
 
-- `part_template.html`(chapter header; applied to chapters marked "section beginning")
-- `chapter_template.html`(chapter header; applied to all "used" and "normal" chapters unless a "part template" exists)
-- `unused_chapter_template.html`(chapter header; applied to chapters marked "unused" or "do not export")
+- `part_template.html`(part header; applied to all "normal" parts)
+- `chapter_template.html`(chapter header; applied to all "normal" chapters)
+- `unused_chapter_template.html`(chapter header; applied to all "unused" chapters)
 
 
-- `chapter_end_template.html`(chapter footer; applied to all "used" and "normal" chapters)
-- `unused_chapter_end_template.html`(chapter footer; applied to chapters marked "unused" or "do not export")
+- `chapter_end_template.html`(chapter footer; applied to all "normal" chapters)
+- `unused_chapter_end_template.html`(chapter footer; applied to all "unused" chapters)
 
 
 
 ### Section level templates
 
-- `section_template.html`(applied to "used" sections within "normal" chapters)
+- `section_template.html`(applied to "normal" sections within "normal" chapters)
 - `first_section_template.html`(applied  to sections at the beginning of the chapter)
 - `unused_section_template.html`(applied to "unused" sections)
 - `section_divider.html`(lead sections, beginning from the second in chapter)
