@@ -29,7 +29,7 @@ Download the latest release [novx_html_v0.4.1.zip](https://github.com/peter88213
 
 ## Usage
 
-See the [instruction for use](https://peter88213.github.io/novx_html/help/)
+See the [user guide](https://peter88213.github.io/novx_html/help/)
 
 ## Credits
 
