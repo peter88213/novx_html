@@ -6,7 +6,7 @@
 
 ### Version 0.4.0 
 
-- New section template: `appended_section_template.txt`.
+- New section template: `appended_section_template.html`.
 - Added batch files to the samples.
 - Updated instructions for use.
 

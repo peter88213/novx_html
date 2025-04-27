@@ -61,7 +61,7 @@ The results will be written to the novelibre project directory.
 ### Section level templates
 
 - `section_template.html`(applied to "normal" sections within "normal" chapters)
-- `appended_section_template.txt`(optional; applied to "normal" sections that are appended to the previous one)
+- `appended_section_template.html`(optional; applied to "normal" sections that are appended to the previous one)
 - `first_section_template.txt`(optional; applied  to "normal" sections at the beginning of the chapter)
 - `unused_section_template.html`(applied to "unused" sections)
 - `section_divider.html`(lead sections, beginning from the second in chapter)
