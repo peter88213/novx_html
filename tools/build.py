@@ -6,11 +6,13 @@ For further information see https://github.com/peter88213/novx_html
 License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 """
 import os
+from shutil import copy2
+from shutil import make_archive
+from shutil import rmtree
 import sys
 
 sys.path.insert(0, f'{os.getcwd()}/../../novelibre/tools')
 from package_builder import PackageBuilder
-from shutil import rmtree
 
 VERSION = '0.4.1'
 
@@ -34,6 +36,17 @@ class ApplicationBuilder(PackageBuilder):
 
     def create_pyz(self, sourceDir, targetDir, release):
         return
+
+    def make_zip(self, sourceDir, targetDir, release):
+        """Create the alternative zip file.
+        
+        Overrides the superclass method.
+        """
+        self.write_setup_script(sourceDir)
+        copy2('../docs/help/index.md', f'{sourceDir}/README.md')
+        target = f'{targetDir}/{release}'
+        print(f'Writing "{target}.zip" ...')
+        make_archive(target, 'zip', sourceDir)
 
     def prepare_package(self):
         """Create the package directory and populate it with the basic files."""

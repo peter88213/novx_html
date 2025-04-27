@@ -1,10 +1,10 @@
-[Project homepage](https://github.com/peter88213/novx_html) > User guide
+[Project homepage](https://github.com/peter88213/novx_html) > [Index](https://peter88213.github.io/novx_html/) > User guide
 
 ---
 
 # novx_html User guide
 
-The novx_html Python script runs through all chapters and sections of a novelibre project and fills HTML templates.
+The *novx_html* Python script runs through all chapters and sections of a novelibre project and fills HTML templates.
 
 ## Usage
 

@@ -1,7 +1,7 @@
 [![Download the latest release](docs/img/download-button.png)](https://raw.githubusercontent.com/peter88213/novx_html/main/dist/novx_html_v0.4.1.pyzw)
 [![Changelog](docs/img/changelog-button.png)](docs/changelog.md)
 [![News/Feedback](docs/img/news-button.png)](https://github.com/peter88213/novelibre/discussions)
-[![User guide](docs/img/help-button.png)](docs/usage.md)
+[![User guide](docs/img/help-button.png)](https://peter88213.github.io/novx_html/help/)
 
 
 # ![H](src/icons/hLogo32.png) novx_html
@@ -29,7 +29,7 @@ Download the latest release [novx_html_v0.4.1.zip](https://github.com/peter88213
 
 ## Usage
 
-See the [instruction for use](docs/usage.md)
+See the [instruction for use](https://peter88213.github.io/novx_html/help/)
 
 ## Credits
 
