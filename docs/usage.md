@@ -118,7 +118,7 @@ There are two options:
 -   `$WordCount` - Section word count
 -   `$WordsTotal` - Accumulated word count including the current section
 -   `$Status` - Section status (Outline, Draft etc.)
--   `$SectionContent` - Section content
+-   `$SectionContent` - Section content consisting of ready-formatted paragraphs.
 -   `$Date` - Specific section date (YYYY-MM-DD)
 -   `$Time` - Time section begins: (hh:mm)
 -   `$OdsTime` - Time section begins: (PThhHmmMssS)
