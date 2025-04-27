@@ -1,6 +1,6 @@
 [Project homepage](https://github.com/peter88213/novx_html) > [Index](https://peter88213.github.io/novx_html/) > User guide
 
----
+----------------------------------------------------------------------------
 
 # novx_html User guide
 
@@ -24,11 +24,13 @@ usage: `novx_html.py [-h] [-t template-dir] [-s suffix] [--silent] Project`
  
  `--silent`     suppress error messages and the request to confirm overwriting
 
-If no template directory is set, templates are searched for in the novelibre 
-project directory.
+
+
+If no template directory is set, templates are searched for in the project directory.
 
 If no templates are found, the output file will be empty.
 
+----------------------------------------------------------------------------
 
 ## Examples
 
@@ -38,6 +40,7 @@ You can launch the batch files by dragging and dropping your novelibre project o
 the icons. 
 The results will be written to the novelibre project directory.
 
+----------------------------------------------------------------------------
 
 ## Templates
 
@@ -62,7 +65,6 @@ The results will be written to the novelibre project directory.
 - `unused_chapter_end_template.html`(chapter footer; applied to all "unused" chapters)
 
 
-
 ### Section level templates
 
 - `section_template.html`(applied to "normal" sections within "normal" chapters)
@@ -71,6 +73,7 @@ The results will be written to the novelibre project directory.
 - `unused_section_template.html`(applied to "unused" sections)
 - `section_divider.html`(lead sections, beginning from the second in chapter)
 
+----------------------------------------------------------------------------
 
 ## Placeholders
 
