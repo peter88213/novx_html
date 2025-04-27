@@ -81,7 +81,7 @@ There are two options:
 ### "Project template" placeholders
 
 -   `$Title` - Project title
--   `$Desc` - Project description
+-   `$Desc` - Project description consisting of ready-formatted paragraphs
 -   `$AuthorName` - Author\'s name
 -   `$Language` - Language code acc. to ISO 639-1
 -   `$Country` - Country code acc. to ISO 3166-2
@@ -99,10 +99,10 @@ There are two options:
 -   `$ID` - Chapter ID,
 -   `$ChapterNumber` - Chapter number (in sort order),
 -   `$Title` - Chapter title
--   `$Desc` - Chapter description
--   `$Epigraph` - Epigraph
+-   `$Desc` - Chapter description consisting of ready-formatted paragraphs
+-   `$Epigraph` - Epigraph consisting of ready-formatted paragraphs
 -   `$EpigraphSrc` - Epigraph source
--   `$Notes` - Chapter notes
+-   `$Notes` - Chapter notes consisting of ready-formatted paragraphs
 -   `$ProjectName` - URL-coded file name without suffix and extension
 -   `$ProjectPath` - URL-coded fpath to the project directory
 -   `$Language` - Language code acc. to ISO 639-1
@@ -114,11 +114,11 @@ There are two options:
 -   `$ID` - Section ID,
 -   `$SectionNumber` - Section number (in sort order),
 -   `$Title` - Section title
--   `$Desc` - Section description
+-   `$Desc` - Section description consisting of ready-formatted paragraphs
 -   `$WordCount` - Section word count
 -   `$WordsTotal` - Accumulated word count including the current section
 -   `$Status` - Section status (Outline, Draft etc.)
--   `$SectionContent` - Section content consisting of ready-formatted paragraphs.
+-   `$SectionContent` - Section content consisting of ready-formatted paragraphs
 -   `$Date` - Specific section date (YYYY-MM-DD)
 -   `$Time` - Time section begins: (hh:mm)
 -   `$OdsTime` - Time section begins: (PThhHmmMssS)
@@ -134,9 +134,9 @@ There are two options:
 -   `$LastsMinutes` - Amount of time section lasts: minutes
 -   `Duration` - Combination of days and hours and minutes
 -   `$Scene` - The sections\'s kind of scene, if any
--   `$Goal` - The section protagonist\'s goal
--   `$Conflict` - The section conflict
--   `$Outcome` - The section outcome
+-   `$Goal` - The section protagonist\'s goal consisting of ready-formatted paragraphs
+-   `$Conflict` - The section conflict consisting of ready-formatted paragraphs
+-   `$Outcome` - The section outcome consisting of ready-formatted paragraphs
 -   `$Tags` - Comma-separated list of section tags
 -   `$Characters` - Comma-separated list of characters assigned to the
     section
@@ -144,7 +144,7 @@ There are two options:
 -   `$Locations` - Comma-separated list of locations assigned to the
     section
 -   `$Items` - Comma-separated list of items assigned to the section
--   `$Notes` - Section notes
+-   `$Notes` - Section notes consisting of ready-formatted paragraphs
 -   `$ProjectName` - URL-coded file name without suffix and extension
 -   `$ProjectPath` - URL-coded fpath to the project directory
 -   `$Language` - Language code acc. to ISO 639-1

@@ -4,6 +4,14 @@
 
 ## Changelog
 
+
+### Version 0.4.1 
+
+- Updated samples and documentation.
+
+Based on novelibre 5.23.0
+
+
 ### Version 0.4.0 
 
 - New section template: `appended_section_template.html`.
