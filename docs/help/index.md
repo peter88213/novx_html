@@ -102,7 +102,7 @@ There are two options:
 -   `$CustomChrBio` - Custom character "Bio" field title
 -   `$CustomChrGoals` - Custom character "Goals" field title
 
-## "Chapter template" placeholders
+### "Chapter template" placeholders
 
 -   `$ID` - Chapter ID,
 -   `$ChapterNumber` - Chapter number (in sort order),
@@ -117,7 +117,7 @@ There are two options:
 -   `$Country` - Country code acc. to ISO 3166-2
 -   `$ManuscriptSuffix` - File name suffix of the manuscript
 
-## "Section template" placeholders
+### "Section template" placeholders
 
 -   `$ID` - Section ID,
 -   `$SectionNumber` - Section number (in sort order),
@@ -165,3 +165,12 @@ There are two options:
 -   `$CustomGoal` - Custom "Goal" field title
 -   `$CustomConflict` - Custom "Conflict" field title
 -   `$CustomOutcome` - Custom "Outcome" field title
+
+----------------------------------------------------------------------------
+
+## Installation path
+
+The setup script installs *novx_html.py* in a defined place. This is the
+installation path on Windows:
+
+`c:\Users\<user name>.novx\novx_html`
