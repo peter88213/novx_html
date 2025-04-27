@@ -32,9 +32,8 @@ If no templates are found, the output file will be empty.
 
 ## Examples
 
-The downloaded zip file includes a directory named *sample* containing a *sample* 
-directory with example templates for different purposes and some example batch files 
-showing the correct commands. 
+The downloaded zip file includes a directory named `sample` containing example templates 
+for different purposes and some example batch files showing the correct commands. 
 You can launch the batch files by dragging and dropping your novelibre project on 
 the icons. 
 The results will be written to the novelibre project directory.
