@@ -1,0 +1,1 @@
+python ..\novx_html.py %1 -t template\proofread -s _proof

@@ -4,6 +4,15 @@
 
 ## Changelog
 
+### Version 0.4.0 
+
+- New section template: `appended_section_template.txt`.
+- Added batch files to the samples.
+- Updated instructions for use.
+
+Based on novelibre 5.23.0
+
+
 ### Version 0.3.0 
 
 New chapter placeholders:

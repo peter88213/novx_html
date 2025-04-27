@@ -1,12 +1,15 @@
 The novx_html Python script runs through all chapters and sections of a novelibre project and fills HTML templates.
 
 ## Usage
+
 usage: `novx_html.py [-h] [-t template-dir] [-s suffix] [--silent] Project`
 
 #### positional arguments:
+
  `Project`     novelibre project file
 
 #### optional arguments:
+
  `-h, --help`    show a help message and exit
  
  `-t template-dir` template directory
@@ -22,6 +25,7 @@ If no templates are found, the output file will be empty.
 
 
 ## Examples
+
 The downloaded zip file includes a directory named *sample* containing a *sample* 
 directory with example templates for different purposes and some example batch files 
 showing the correct commands. 
@@ -30,7 +34,7 @@ the icons.
 The results will be written to the novelibre project directory.
 
 
-## List of templates
+## Templates
 
 ### Project level templates
 
@@ -57,14 +61,15 @@ The results will be written to the novelibre project directory.
 ### Section level templates
 
 - `section_template.html`(applied to "normal" sections within "normal" chapters)
-- `first_section_template.html`(applied  to sections at the beginning of the chapter)
+- `appended_section_template.txt`(optional; applied to "normal" sections that are appended to the previous one)
+- `first_section_template.txt`(optional; applied  to "normal" sections at the beginning of the chapter)
 - `unused_section_template.html`(applied to "unused" sections)
 - `section_divider.html`(lead sections, beginning from the second in chapter)
 
 
-# Placeholders
+## Placeholders
 
-## Syntax
+### Syntax
 
 There are two options:
 
@@ -73,23 +78,23 @@ There are two options:
 2.  `${Placeholder}` - If the placeholder is followed by a character
     that is not recognizable as a separator.
 
-## \"Project template\" placeholders
+### "Project template" placeholders
 
 -   `$Title` - Project title
 -   `$Desc` - Project description
 -   `$AuthorName` - Author\'s name
 -   `$Language` - Language code acc. to ISO 639-1
 -   `$Country` - Country code acc. to ISO 3166-2
--   `$CustomPlotProgress` - Custom \"Plot progress\" field title
--   `$CustomCharacterization` - Custom \"Characterization\" field title
--   `$CustomWorldBuilding` - Custom \"World building\" field title
--   `$CustomGoal` - Custom \"Goal\" field title
--   `$CustomConflict` - Custom \"Conflict\" field title
--   `$CustomOutcome` - Custom \"Outcome\" field title
--   `$CustomChrBio` - Custom character \"Bio\" field title
--   `$CustomChrGoals` - Custom character \"Goals\" field title
+-   `$CustomPlotProgress` - Custom "Plot progress" field title
+-   `$CustomCharacterization` - Custom "Characterization" field title
+-   `$CustomWorldBuilding` - Custom "World building" field title
+-   `$CustomGoal` - Custom "Goal" field title
+-   `$CustomConflict` - Custom "Conflict" field title
+-   `$CustomOutcome` - Custom "Outcome" field title
+-   `$CustomChrBio` - Custom character "Bio" field title
+-   `$CustomChrGoals` - Custom character "Goals" field title
 
-## \"Chapter template\" placeholders
+## "Chapter template" placeholders
 
 -   `$ID` - Chapter ID,
 -   `$ChapterNumber` - Chapter number (in sort order),
@@ -104,7 +109,7 @@ There are two options:
 -   `$Country` - Country code acc. to ISO 3166-2
 -   `$ManuscriptSuffix` - File name suffix of the manuscript
 
-## \"Section template\" placeholders
+## "Section template" placeholders
 
 -   `$ID` - Section ID,
 -   `$SectionNumber` - Section number (in sort order),
@@ -146,9 +151,9 @@ There are two options:
 -   `$Country` - Country code acc. to ISO 3166-2
 -   `$ManuscriptSuffix` - File name suffix of the manuscript
 -   `$SectionsSuffix` - File name suffix of the section descriptions
--   `$CustomPlotProgress` - Custom \"Plot progress\" field title
--   `$CustomCharacterization` - Custom \"Characterization\" field title
--   `$CustomWorldBuilding` - Custom \"World building\" field title
--   `$CustomGoal` - Custom \"Goal\" field title
--   `$CustomConflict` - Custom \"Conflict\" field title
--   `$CustomOutcome` - Custom \"Outcome\" field title
+-   `$CustomPlotProgress` - Custom "Plot progress" field title
+-   `$CustomCharacterization` - Custom "Characterization" field title
+-   `$CustomWorldBuilding` - Custom "World building" field title
+-   `$CustomGoal` - Custom "Goal" field title
+-   `$CustomConflict` - Custom "Conflict" field title
+-   `$CustomOutcome` - Custom "Outcome" field title
