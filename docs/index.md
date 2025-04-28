@@ -2,7 +2,7 @@
 
 ---
 
-# novx_html
+# Index
 
 Template-based HTML export for [novelibre](https://github.com/peter88213/novelibre/).
 
@@ -11,10 +11,4 @@ Template-based HTML export for [novelibre](https://github.com/peter88213/novelib
 
 ---
 
-# License
-
-This is Open Source software, and *novx_html* is licensed under GPLv3. See the
-[GNU General Public License website](https://www.gnu.org/licenses/gpl-3.0.en.html) for more
-details, or consult the [LICENSE](https://github.com/peter88213/novx_html/blob/main/LICENSE) file.
-
-
+Copyright (c) 2025 by Peter Triesberger. All rights reserved.

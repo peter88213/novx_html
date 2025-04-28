@@ -2,7 +2,7 @@
 
 ----------------------------------------------------------------------------
 
-# novx_html User guide
+# User guide
 
 The *novx_html* Python script runs through all chapters and sections of a novelibre project and fills HTML templates.
 
@@ -174,3 +174,8 @@ The setup script installs *novx_html.py* in a defined place. This is the
 installation path on Windows:
 
 `c:\Users\<user name>.novx\novx_html`
+
+---
+
+Copyright (c) 2025 by Peter Triesberger. All rights reserved.
+
