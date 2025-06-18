@@ -5,6 +5,13 @@
 ## Changelog
 
 
+### Version 0.5.0
+
+- Reading novx version 1.7 files.
+
+Based on novelibre 5.27.1
+
+
 ### Version 0.4.1 
 
 - Updated samples and documentation.
