@@ -16,7 +16,7 @@ from shutil import copyfile
 
 TEST_PATH = os.getcwd() + '/../test'
 TEST_DATA_PATH = TEST_PATH + '/data/'
-TEST_EXEC_PATH = TEST_PATH + '/tmp/'
+TEST_EXEC_PATH = TEST_PATH + '/temp/'
 TEMPLATE_PATH = '../../sample/'
 
 # To be placed in TEST_DATA_PATH:
