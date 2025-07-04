@@ -46,7 +46,8 @@ class HtmlTemplatefileExport(HtmlExport):
         """Read templates from files, if any.
 
         Positional arguments:
-            filePath: str -- path to the file represented by the Novel instance.
+            filePath: str -- path to the file represented 
+                             by the Novel instance.
             
         Required keyword arguments:
             template_path: str -- template directory path.
@@ -64,48 +65,118 @@ class HtmlTemplatefileExport(HtmlExport):
         templatePath = kwargs['template_path']
 
         # Project level.
-        content = load_template(f'{templatePath}/{self._HTML_HEADER}{self.EXTENSION}')
+        content = load_template(
+            (
+                f'{templatePath}/'
+                f'{self._HTML_HEADER}{self.EXTENSION}'
+            )
+        )
         if content is not None:
             self._fileHeader = content
-        content = load_template(f'{templatePath}/{self._CHARACTER_TEMPLATE}{self.EXTENSION}')
+        content = load_template(
+            (
+                f'{templatePath}/'
+                f'{self._CHARACTER_TEMPLATE}{self.EXTENSION}'
+            )
+        )
         if content is not None:
             self._characterTemplate = content
-        content = load_template(f'{templatePath}/{self._LOCATION_TEMPLATE}{self.EXTENSION}')
+        content = load_template(
+            (
+                f'{templatePath}/'
+                f'{self._LOCATION_TEMPLATE}{self.EXTENSION}'
+            )
+        )
         if content is not None:
             self._locationTemplate = content
-        content = load_template(f'{templatePath}/{self._ITEM_TEMPLATE}{self.EXTENSION}')
+        content = load_template(
+            (
+                f'{templatePath}/'
+                f'{self._ITEM_TEMPLATE}{self.EXTENSION}'
+            )
+        )
         if content is not None:
             self._itemTemplate = content
-        content = load_template(f'{templatePath}/{self._HTML_FOOTER}{self.EXTENSION}')
+        content = load_template(
+            (
+                f'{templatePath}/'
+                f'{self._HTML_FOOTER}{self.EXTENSION}'
+            )
+        )
         if content is not None:
             self._fileFooter = content
 
         # Chapter level.
-        content = load_template(f'{templatePath}/{self._PART_TEMPLATE}{self.EXTENSION}')
+        content = load_template(
+            (
+                f'{templatePath}/'
+                f'{self._PART_TEMPLATE}{self.EXTENSION}'
+            )
+        )
         if content is not None:
             self._partTemplate = content
-        content = load_template(f'{templatePath}/{self._CHAPTER_TEMPLATE}{self.EXTENSION}')
+        content = load_template(
+            (
+                f'{templatePath}/'
+                f'{self._CHAPTER_TEMPLATE}{self.EXTENSION}'
+            )
+        )
         if content is not None:
             self._chapterTemplate = content
-        content = load_template(f'{templatePath}/{self._CHAPTER_END_TEMPLATE}{self.EXTENSION}')
+        content = load_template(
+            (
+                f'{templatePath}/'
+                f'{self._CHAPTER_END_TEMPLATE}{self.EXTENSION}'
+            )
+        )
         if content is not None:
             self._chapterEndTemplate = content
-        content = load_template(f'{templatePath}/{self._UNUSED_CHAPTER_TEMPLATE}{self.EXTENSION}')
+        content = load_template(
+            (
+                f'{templatePath}/'
+                f'{self._UNUSED_CHAPTER_TEMPLATE}{self.EXTENSION}'
+            )
+        )
         if content is not None:
             self._unusedChapterTemplate = content
-        content = load_template(f'{templatePath}/{self._UNUSED_CHAPTER_END_TEMPLATE}{self.EXTENSION}')
+        content = load_template(
+            (
+                f'{templatePath}/'
+                f'{self._UNUSED_CHAPTER_END_TEMPLATE}{self.EXTENSION}'
+            )
+        )
 
         # Scene level.
-        content = load_template(f'{templatePath}/{self._SCENE_TEMPLATE}{self.EXTENSION}')
+        content = load_template(
+            (
+                f'{templatePath}/'
+                f'{self._SCENE_TEMPLATE}{self.EXTENSION}'
+            )
+        )
         if content is not None:
             self._sectionTemplate = content
-        content = load_template(f'{templatePath}/{self._FIRST_SCENE_TEMPLATE}{self.EXTENSION}')
+        content = load_template(
+            (
+                f'{templatePath}/'
+                f'{self._FIRST_SCENE_TEMPLATE}{self.EXTENSION}'
+            )
+        )
         if content is not None:
             self._firstSceneTemplate = content
-        content = load_template(f'{templatePath}/{self._UNUSED_SCENE_TEMPLATE}{self.EXTENSION}')
+        content = load_template(
+            (
+                f'{templatePath}/'
+                f'{self._UNUSED_SCENE_TEMPLATE}{self.EXTENSION}'
+            )
+        )
         if content is not None:
             self._unusedSceneTemplate = content
-        content = load_template(f'{templatePath}/{self._SCENE_DIVIDER}{self.EXTENSION}')
+        content = load_template(
+            (
+                f'{templatePath}/'
+                f'{self._SCENE_DIVIDER}{self.EXTENSION}'
+            )
+        )
         if content is not None:
             self._sectionDivider = content
 
@@ -149,11 +220,37 @@ class HtmlTemplatefileExport(HtmlExport):
 
             return "".join(result)
 
-        TENS = {30: 'thirty', 40: 'forty', 50: 'fifty',
-                60: 'sixty', 70: 'seventy', 80: 'eighty', 90: 'ninety'}
+        TENS = {
+            30: 'thirty',
+            40: 'forty',
+            50: 'fifty',
+            60: 'sixty',
+            70: 'seventy',
+            80: 'eighty',
+            90: 'ninety'
+        }
         ZERO_TO_TWENTY = (
-            'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten',
-            'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty'
+            'zero',
+            'one',
+            'two',
+            'three',
+            'four',
+            'five',
+            'six',
+            'seven',
+            'eight',
+            'nine',
+            'ten',
+            'eleven',
+            'twelve',
+            'thirteen',
+            'fourteen',
+            'fifteen',
+            'sixteen',
+            'seventeen',
+            'eighteen',
+            'nineteen',
+            'twenty'
         )
 
         def number_to_english(n):
@@ -172,23 +269,38 @@ class HtmlTemplatefileExport(HtmlExport):
                 return TENS[n]
 
             elif n < 100:
-                return f'{number_to_english(n - (n % 10))} {number_to_english(n % 10)}'
+                return (
+                    f'{number_to_english(n - (n % 10))} '
+                    f'{number_to_english(n % 10)}'
+                )
 
             elif n < 1000 and n % 100 == 0:
-                return f'{number_to_english(n / 100)} hundred'
+                return (
+                    f'{number_to_english(n / 100)} hundred'
+                )
 
             elif n < 1000:
-                return f'{number_to_english(n / 100)} hundred {number_to_english(n % 100)}'
+                return (
+                    f'{number_to_english(n / 100)} hundred '
+                    f'{number_to_english(n % 100)}'
+                )
 
             elif n < 1000000:
-                return f'{number_to_english(n / 1000)} thousand {number_to_english(n % 1000)}'
+                return (
+                    f'{number_to_english(n / 1000)} thousand '
+                    f'{number_to_english(n % 1000)}'
+                )
 
             return ''
 
         chapterMapping = super()._get_chapterMapping(chId, chapterNumber)
         if chapterNumber:
-            chapterMapping['ChNumberEnglish'] = number_to_english(chapterNumber).capitalize()
-            chapterMapping['ChNumberRoman'] = number_to_roman(chapterNumber)
+            chapterMapping['ChNumberEnglish'] = number_to_english(
+                chapterNumber
+            ).capitalize()
+            chapterMapping['ChNumberRoman'] = number_to_roman(
+                chapterNumber
+            )
         else:
             chapterMapping['ChNumberEnglish'] = ''
             chapterMapping['ChNumberRoman'] = ''

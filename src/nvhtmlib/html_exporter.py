@@ -14,8 +14,10 @@ class HtmlExporter(Converter):
     """A converter class for html export.
 
     Class constants:
-        EXPORT_SOURCE_CLASSES -- List of YwFile subclasses from which can be exported.
-        EXPORT_TARGET_CLASSES -- List of FileExport subclasses to which export is possible.
+        EXPORT_SOURCE_CLASSES -- List of YwFile subclasses 
+                                 from which can be exported.
+        EXPORT_TARGET_CLASSES -- List of FileExport subclasses 
+                                 to which export is possible.
     """
     EXPORT_SOURCE_CLASSES = [NovxFile]
     EXPORT_TARGET_CLASSES = [HtmlTemplatefileExport]
@@ -28,5 +30,7 @@ class HtmlExporter(Converter):
         Extends the superclass constructor.
         """
         super().__init__()
-        self.exportTargetFactory = ExportAnyTargetFactory(self.EXPORT_TARGET_CLASSES)
+        self.exportTargetFactory = ExportAnyTargetFactory(
+            self.EXPORT_TARGET_CLASSES
+        )
 

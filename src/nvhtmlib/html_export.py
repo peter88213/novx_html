@@ -61,14 +61,21 @@ $SectionContent
 </html>
 '''
 
-    def _convert_from_novx(self, text, quick=False, firstInChapter=False, **kwargs):
+    def _convert_from_novx(
+            self,
+            text,
+            quick=False,
+            firstInChapter=False,
+            **kwargs
+    ):
         """Return text, converted from *novelibre* markup to target format.
         
         Positional arguments:
             text -- string to convert.
         
         Optional arguments:
-            quick: bool -- if True, apply a conversion mode for one-liners without formatting.
+            quick: bool -- if True, apply a conversion mode for one-liners 
+                           without formatting.
         
         Overrides the superclass method.
         """

@@ -38,7 +38,12 @@ def run(sourcePath, templatePath, suffix, silentMode=True):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description='Export novelibre project to html.',
-        epilog='If no template directory is set, templates are searched for in the novelibre project directory. If no templates are found, the output file will be empty.')
+        epilog=(
+            'If no template directory is set, '
+            'templates are searched for in the novelibre project directory. '
+            'If no templates are found, the output file will be empty.'
+        )
+    )
     parser.add_argument('sourcePath', metavar='Project',
                         help='novelibre project file')
     parser.add_argument('-t', dest='templatePath', metavar='template-dir',
@@ -47,7 +52,11 @@ if __name__ == '__main__':
                         help='suffix to the output file name (optional)')
     parser.add_argument('--silent',
                         action="store_true",
-                        help='suppress error messages and the request to confirm overwriting')
+                        help=(
+                            'suppress error messages and the '
+                            'request to confirm overwriting'
+                        )
+    )
     args = parser.parse_args()
     if args.templatePath:
         templatePath = args.templatePath

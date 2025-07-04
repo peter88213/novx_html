@@ -35,7 +35,10 @@ class ExportAnyTargetFactory(FileFactory):
             if suffix is None:
                 suffix = ''
             fileClass.SUFFIX = suffix
-            targetFile = fileClass(f'{fileName}{suffix}{fileClass.EXTENSION}', **kwargs)
+            targetFile = fileClass(
+                f'{fileName}{suffix}{fileClass.EXTENSION}',
+                **kwargs
+            )
             return None, targetFile
 
         raise Error(f'{_("Export type is not supported")}: "{suffix}".')
