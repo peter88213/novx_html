@@ -1,4 +1,4 @@
-[![Download the latest release](docs/img/download-button.png)](https://raw.githubusercontent.com/peter88213/novx_html/main/dist/novx_html_v0.99.0.pyzw)
+[![Download the latest release](docs/img/download-button.png)](https://raw.githubusercontent.com/peter88213/novx_html/main/dist/novx_html_v0.99.0.zip)
 [![Changelog](docs/img/changelog-button.png)](docs/changelog.md)
 [![News/Feedback](docs/img/news-button.png)](https://github.com/peter88213/novelibre/discussions)
 [![User guide](docs/img/help-button.png)](https://peter88213.github.io/novx_html/help/)
