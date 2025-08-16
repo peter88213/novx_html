@@ -1,4 +1,4 @@
-[![Download the latest release](docs/img/download-button.png)](https://raw.githubusercontent.com/peter88213/novx_html/main/dist/novx_html_v0.5.0.zip)
+[![Download the latest release](docs/img/download-button.png)](https://raw.githubusercontent.com/peter88213/novx_html/main/dist/novx_html_v0.5.1.zip)
 [![Changelog](docs/img/changelog-button.png)](docs/changelog.md)
 [![News/Feedback](docs/img/news-button.png)](https://github.com/peter88213/novelibre/discussions)
 [![User guide](docs/img/help-button.png)](https://peter88213.github.io/novx_html/help/)
@@ -19,9 +19,9 @@ This is an experimental *.novx* variant of the [yw2html](https://peter88213.gith
 ## Download and install
 
 
-Download the latest release [novx_html_v0.5.0.zip](https://github.com/peter88213/novx_html/raw/main/dist/novx_html_v0.5.0.zip)
+Download the latest release [novx_html_v0.5.1.zip](https://github.com/peter88213/novx_html/raw/main/dist/novx_html_v0.5.1.zip)
 
-- Extract the *novx_html_v0.5.0* folder from the downloaded zipfile "novx_html_v0.5.0.zip".
+- Extract the *novx_html_v0.5.1* folder from the downloaded zipfile "novx_html_v0.5.1.zip".
 
 ---
 
