@@ -14,7 +14,7 @@ This is an experimental *.novx* variant of the [yw2html](https://peter88213.gith
 
 ## Requirements
 
-- [Python](https://www.python.org/) version 3.6+.
+- [Python](https://www.python.org/) version 3.7+.
 
 ## Download and install
 

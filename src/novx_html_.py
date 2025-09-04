@@ -1,7 +1,7 @@
 """Export novelibre project to HTML.
 
 Version @release
-Requires Python 3.6+
+Requires Python 3.7+
 Copyright (c) 2025 Peter Triesberger
 For further information see https://github.com/peter88213/novx_html
 License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
@@ -16,14 +16,24 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
 GNU General Public License for more details.
 """
-import os
 import argparse
+import os
+import sys
+
+from nvhtmlib.html_exporter import HtmlExporter
 from nvlib.user_interface.ui import Ui
 from nvlib.user_interface.ui_cmd import UiCmd
-from nvhtmlib.html_exporter import HtmlExporter
 
 
 def run(sourcePath, templatePath, suffix, silentMode=True):
+    major = sys.version_info.major
+    minor = sys.version_info.minor
+    if  major != 3 or minor < 7:
+        raise Exception(
+            f'Wrong Python version installed: {major}.{minor}.\n'
+            'Must be 3.7 or newer.'
+        )
+
     if silentMode:
         ui = Ui('')
     else:
