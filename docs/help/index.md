@@ -71,6 +71,7 @@ The results will be written to the novelibre project directory.
 - `appended_section_template.html`(optional; applied to "normal" sections that are appended to the previous one)
 - `first_section_template.txt`(optional; applied  to "normal" sections at the beginning of the chapter)
 - `unused_section_template.html`(applied to "unused" sections)
+- `epigraphTemplate` (applied to epigraphs)
 - `section_divider.html`(lead sections, beginning from the second in chapter)
 
 ----------------------------------------------------------------------------
@@ -119,8 +120,6 @@ There are two options:
 -   `$ChapterNumber` - Chapter number (in sort order),
 -   `$Title` - Chapter title
 -   `$Desc` - Chapter description consisting of ready-formatted paragraphs
--   `$Epigraph` - Epigraph consisting of ready-formatted paragraphs
--   `$EpigraphSrc` - Epigraph source
 -   `$Notes` - Chapter notes consisting of ready-formatted paragraphs
 -   `$ProjectName` - URL-coded file name without suffix and extension
 -   `$ProjectPath` - URL-coded fpath to the project directory
