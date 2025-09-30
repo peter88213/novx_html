@@ -39,7 +39,7 @@ class HtmlTemplatefileExport(HtmlExport):
     _SCENE_TEMPLATE = 'section_template'
     _FIRST_SCENE_TEMPLATE = 'first_section_template'
     _UNUSED_SCENE_TEMPLATE = 'unused_section_template'
-    _SCENE_DIVIDER = 'section_divider'
+    _SECTION_DIVIDER = 'section_divider'
     _TEMPLATE_CHAPTER_TITLE = 'html templates'
 
     def __init__(self, filePath, **kwargs):
@@ -66,116 +66,88 @@ class HtmlTemplatefileExport(HtmlExport):
 
         # Project level.
         content = load_template(
-            (
-                f'{templatePath}/'
-                f'{self._HTML_HEADER}{self.EXTENSION}'
-            )
+            f'{templatePath}/'
+            f'{self._HTML_HEADER}{self.EXTENSION}'
         )
         if content is not None:
             self._fileHeader = content
         content = load_template(
-            (
-                f'{templatePath}/'
-                f'{self._CHARACTER_TEMPLATE}{self.EXTENSION}'
-            )
+            f'{templatePath}/'
+            f'{self._CHARACTER_TEMPLATE}{self.EXTENSION}'
         )
         if content is not None:
             self._characterTemplate = content
         content = load_template(
-            (
-                f'{templatePath}/'
-                f'{self._LOCATION_TEMPLATE}{self.EXTENSION}'
-            )
+            f'{templatePath}/'
+            f'{self._LOCATION_TEMPLATE}{self.EXTENSION}'
         )
         if content is not None:
             self._locationTemplate = content
         content = load_template(
-            (
-                f'{templatePath}/'
-                f'{self._ITEM_TEMPLATE}{self.EXTENSION}'
-            )
+            f'{templatePath}/'
+            f'{self._ITEM_TEMPLATE}{self.EXTENSION}'
         )
         if content is not None:
             self._itemTemplate = content
         content = load_template(
-            (
-                f'{templatePath}/'
-                f'{self._HTML_FOOTER}{self.EXTENSION}'
-            )
+            f'{templatePath}/'
+            f'{self._HTML_FOOTER}{self.EXTENSION}'
         )
         if content is not None:
             self._fileFooter = content
 
         # Chapter level.
         content = load_template(
-            (
-                f'{templatePath}/'
-                f'{self._PART_TEMPLATE}{self.EXTENSION}'
-            )
+            f'{templatePath}/'
+            f'{self._PART_TEMPLATE}{self.EXTENSION}'
         )
         if content is not None:
             self._partTemplate = content
         content = load_template(
-            (
-                f'{templatePath}/'
-                f'{self._CHAPTER_TEMPLATE}{self.EXTENSION}'
-            )
+            f'{templatePath}/'
+            f'{self._CHAPTER_TEMPLATE}{self.EXTENSION}'
         )
         if content is not None:
             self._chapterTemplate = content
         content = load_template(
-            (
-                f'{templatePath}/'
-                f'{self._CHAPTER_END_TEMPLATE}{self.EXTENSION}'
-            )
+            f'{templatePath}/'
+            f'{self._CHAPTER_END_TEMPLATE}{self.EXTENSION}'
         )
         if content is not None:
             self._chapterEndTemplate = content
         content = load_template(
-            (
-                f'{templatePath}/'
-                f'{self._UNUSED_CHAPTER_TEMPLATE}{self.EXTENSION}'
-            )
+            f'{templatePath}/'
+            f'{self._UNUSED_CHAPTER_TEMPLATE}{self.EXTENSION}'
         )
         if content is not None:
             self._unusedChapterTemplate = content
         content = load_template(
-            (
-                f'{templatePath}/'
-                f'{self._UNUSED_CHAPTER_END_TEMPLATE}{self.EXTENSION}'
-            )
+            f'{templatePath}/'
+            f'{self._UNUSED_CHAPTER_END_TEMPLATE}{self.EXTENSION}'
         )
 
         # Scene level.
         content = load_template(
-            (
-                f'{templatePath}/'
-                f'{self._SCENE_TEMPLATE}{self.EXTENSION}'
-            )
+            f'{templatePath}/'
+            f'{self._SCENE_TEMPLATE}{self.EXTENSION}'
         )
         if content is not None:
             self._sectionTemplate = content
         content = load_template(
-            (
-                f'{templatePath}/'
-                f'{self._FIRST_SCENE_TEMPLATE}{self.EXTENSION}'
-            )
+            f'{templatePath}/'
+            f'{self._FIRST_SCENE_TEMPLATE}{self.EXTENSION}'
         )
         if content is not None:
             self._firstSceneTemplate = content
         content = load_template(
-            (
-                f'{templatePath}/'
-                f'{self._UNUSED_SCENE_TEMPLATE}{self.EXTENSION}'
-            )
+            f'{templatePath}/'
+            f'{self._UNUSED_SCENE_TEMPLATE}{self.EXTENSION}'
         )
         if content is not None:
             self._unusedSceneTemplate = content
         content = load_template(
-            (
-                f'{templatePath}/'
-                f'{self._SCENE_DIVIDER}{self.EXTENSION}'
-            )
+            f'{templatePath}/'
+            f'{self._SECTION_DIVIDER}{self.EXTENSION}'
         )
         if content is not None:
             self._sectionDivider = content
