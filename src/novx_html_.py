@@ -21,8 +21,8 @@ import os
 import sys
 
 from nvhtmlib.html_exporter import HtmlExporter
-from nvlib.user_interface.ui import Ui
-from nvlib.user_interface.ui_cmd import UiCmd
+from nvlib.alternative_ui.ui import Ui
+from nvlib.alternative_ui.ui_cmd import UiCmd
 
 
 def run(sourcePath, templatePath, suffix, silentMode=True):

@@ -5,6 +5,13 @@
 ## Changelog
 
 
+### Version 5.2.2
+
+- Refactored the code.
+
+Based on novelibre 5.43.3
+
+
 ### Version 5.2.1
 
 - Refactored the code.
