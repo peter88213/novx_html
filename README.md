@@ -19,7 +19,7 @@ This is an experimental *.novx* variant of the [yw2html](https://peter88213.gith
 ## Download and install
 
 
-Download the latest release [novx_html_v5.3.1.zip](https://github.com/peter88213/novx_html/raw/main/dist/novx_html_v5.3.1.zip)
+Download the latest release [novx_html_v5.3.1.zip](https://github.com/peter88213/novx_html/raw/main/dist/novx_html_v5.3.1.zip) (55 KB)
 
 - Extract the *novx_html_v5.3.1* folder from the downloaded zipfile "novx_html_v5.3.1.zip".
 
