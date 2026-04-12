@@ -5,6 +5,13 @@
 ## Changelog
 
 
+### Version 5.3.2
+
+- Prepared the HTML file reader for Python 3.15.
+
+Based on novelibre 5.55.14
+
+
 ### Version 5.3.1
 
 - Fixed the Python version check.
